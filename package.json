@@ -8,17 +8,9 @@
     "lint": "eslint lib",
     "start": "DEBUG=hooks-logger:* nodemon examples/server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oizpans/feathers-hook-logger.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oizpans/feathers-hook-logger/issues"
-  },
-  "homepage": "https://github.com/oizpans/feathers-hook-logger#readme",
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
