@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "",
+    "lint": "eslint lib"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/oizpans/feathers-hook-logger/issues"
   },
-  "homepage": "https://github.com/oizpans/feathers-hook-logger#readme"
+  "homepage": "https://github.com/oizpans/feathers-hook-logger#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-no-else": "^0.2.2"
+  },
+  "dependencies": {
+    "@feathersjs/errors": "^3.3.0",
+    "debug": "^3.1.0"
+  }
 }
