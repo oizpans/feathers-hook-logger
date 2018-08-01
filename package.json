@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "The hook that sends data to our logger service",
   "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test": "jest",
     "lint": "eslint lib",
