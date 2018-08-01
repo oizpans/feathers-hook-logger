@@ -1,0 +1,23 @@
+{
+  "name": "hook-logger",
+  "version": "1.0.0",
+  "description": "The hook that sends data to our logger service",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oizpans/feathers-hook-logger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oizpans/feathers-hook-logger/issues"
+  },
+  "homepage": "https://github.com/oizpans/feathers-hook-logger#readme"
+}
