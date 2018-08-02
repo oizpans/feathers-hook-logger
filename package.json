@@ -1,6 +1,6 @@
 {
   "name": "feathers-hook-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The hook that sends data to our logger service",
   "main": "lib/index.js",
   "scripts": {
