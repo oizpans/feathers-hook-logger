@@ -8,4 +8,8 @@ app.set('name', 'some_app');
 
 app.configure(services);
 
+(async function run() {
+  await app.service('with-errors').find();
+}());
+
 debug('running instance with appName:', app.get('name'));

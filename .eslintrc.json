@@ -9,6 +9,7 @@
   "rules": {
     "max-depth": ["error", 4],
     "no-else/no-else": 2,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["examples/**"]}],
     "indent": [
       "error",
       2
