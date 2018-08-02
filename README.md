@@ -1,7 +1,6 @@
 # feathers-hook-logger
-The hook that sends data to our logger service.
+- The hook that sends data to our logger service.
 
 
-# ROADMAPS
+## ROADMAPS
  - testing
- - to be used on browsers and mobile ( react native )
