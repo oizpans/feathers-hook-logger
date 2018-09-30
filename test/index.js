@@ -29,7 +29,7 @@ describe('Test', () => {
     try {
       await app.service('my-service').create({});
     } catch (e) {
-      expect(e.message).toEqual('Cannot read property \'create\' of undefined');
+      expect(e.message).toEqual('local service not found.');
     }
   });
 
