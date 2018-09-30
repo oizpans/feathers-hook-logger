@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint lib",
-    "start": "DEBUG=hooks-logger:* nodemon examples/server"
+    "start": "DEBUG=hooks-logger:*,feathers-mq* nodemon examples/server"
   },
   "keywords": [
     "nats-feathersjs",
