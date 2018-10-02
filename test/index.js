@@ -1,6 +1,5 @@
 const { BadRequest } = require('@feathersjs/errors');
 const app = require('./app');
-const hooks = require('./app/hooks');
 const logger = require('../lib');
 
 const mockCreateMethod = jest.fn();
@@ -84,11 +83,5 @@ describe('Test', () => {
     expect(() => {
       logger([]);
     }).toThrow('specify excluded services.');
-  });
-
-  test('It should throw error when excluded Services excludes "logs" service.', async () => {
-    expect(() => {
-      logger(['not-logs']);
-    }).toThrow('include logs in service exclusion.');
   });
 });
