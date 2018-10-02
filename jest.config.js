@@ -6,7 +6,7 @@ module.exports = {
   // automock: false,
 
   // Stop running tests after the first failure
-  bail: false,
+  bail: true,
 
   // Respect "browser" field in package.json when resolving modules
   // browser: false,
@@ -15,13 +15,15 @@ module.exports = {
   // cacheDirectory: "/tmp/jest_rs",
 
   // Automatically clear mock calls and instances between every test
-  clearMocks: false,
+  clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: [
+    "lib/**",
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
