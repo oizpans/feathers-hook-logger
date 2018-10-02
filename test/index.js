@@ -80,9 +80,15 @@ describe('Test', () => {
     delete app.services.logs;
   });
 
-  test('It should throw error when excluded Services not specified.', async () => {
+  test('It should throw error when excluded Services is empty array.', async () => {
     expect(() => {
       logger([]);
-    }).toThrow('specify excluded services');
+    }).toThrow('specify excluded services.');
+  });
+
+  test('It should throw error when excluded Services excludes "logs" service.', async () => {
+    expect(() => {
+      logger(['not-logs']);
+    }).toThrow('include logs in service exclusion.');
   });
 });
