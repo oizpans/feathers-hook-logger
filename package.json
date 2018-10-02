@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
+    "test-reactive": "jest --watchAll",
     "lint": "eslint lib",
     "start": "DEBUG=hooks-logger:*,feathers-mq* nodemon examples/server"
   },

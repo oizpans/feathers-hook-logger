@@ -1,5 +1,7 @@
 const { BadRequest } = require('@feathersjs/errors');
 const app = require('./app');
+const hooks = require('./app/hooks');
+const logger = require('../lib');
 
 const mockCreateMethod = jest.fn();
 
@@ -22,6 +24,7 @@ describe('Test', () => {
   });
 
   test('It throw error, when local service name \'logs\' not registered', async () => {
+    // set the app name
     app.set('name', 'any_app');
 
     expect(app.service('logs')).toEqual(undefined);
@@ -29,12 +32,12 @@ describe('Test', () => {
     try {
       await app.service('my-service').create({});
     } catch (e) {
-      expect(e.message).toEqual('local service not found.');
+      expect(e.message).toEqual('local service (logs) not found');
     }
   });
 
   test('It should discard to create log when used by logs service.', async () => {
-    // application name
+    // set app name
     app.set('name', 'any_app');
 
     // local service
@@ -53,7 +56,7 @@ describe('Test', () => {
   });
 
   test('It should create log.', async () => {
-    // application name
+    // set app name
     app.set('name', 'any_app');
 
     // local service
@@ -75,5 +78,11 @@ describe('Test', () => {
 
     // unregister the logs service
     delete app.services.logs;
+  });
+
+  test('It should throw error when excluded Services not specified.', async () => {
+    expect(() => {
+      logger([]);
+    }).toThrow('specify excluded services');
   });
 });

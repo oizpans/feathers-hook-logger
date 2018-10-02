@@ -1,4 +1,4 @@
-const hookLogger = require('../lib');
+const hookLogger = require('../../lib');
 
 module.exports = {
   before: {
