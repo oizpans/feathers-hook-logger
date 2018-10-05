@@ -1,8 +1,8 @@
 # feathers hook logger
+
+<img src="https://img.shields.io/github/tag/oizpans/feathers-hook-logger.svg" /> <img src="https://img.shields.io/npm/v/jest.svg?label=jest" /> <img src="https://img.shields.io/npm/v/eslint.svg?label=eslint" /> <img src="https://img.shields.io/npm/v/@feathersjs/feathers.svg?label=@feathersjs/feathers" />
+
 - The hook that sends data to **logs service**. ( registered locally )
-
-<img src="https://img.shields.io/github/tag/oizpans/feathers-hook-logger.svg" /> <img src="https://img.shields.io/npm/v/jest.svg?label=jest" /> <img src="https://img.shields.io/npm/v/eslint.svg?label=eslint" />
-
 
 
 1. Register the logs service. This service responsible for logs storage.
