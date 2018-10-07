@@ -13,7 +13,11 @@
    ```js
     const Service = require('feathers-mongoose');
     const options = {};
-    app.use('logs', new Service(options));
+    
+    module.exports = function(app) {
+      // definition of logs service
+      app.use('logs', new Service(options));
+    }
    ```
 
 2. Install and register the hooks-logger, 
@@ -31,3 +35,4 @@
     }
    };
    ```
+e
