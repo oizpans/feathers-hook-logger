@@ -9,12 +9,13 @@
 
    Example:
 
-   *file: `services/logs/index.js`*
+   file: *`services/logs/index.js`*
    ```js
     const Service = require('feathers-mongoose');
-    const options = {};
+    
     
     module.exports = function(app) {
+      const options = {};
       // definition of logs service
       app.use('logs', new Service(options));
     }
@@ -24,7 +25,7 @@
 
    Example: 
 
-   *file: `services/products/hooks.js`*
+   file: *`services/products/hooks.js`*
 
    ```js
    const logger = require('feathers-hook-logger');
@@ -35,4 +36,3 @@
     }
    };
    ```
-e
