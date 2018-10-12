@@ -14,9 +14,6 @@
     "nats-feathersjs",
     "nats-nodejs"
   ],
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -33,6 +30,6 @@
   },
   "dependencies": {
     "@feathersjs/errors": "^3.3.4",
-    "debug": "^4.0.1"
+    "debug": "^4.1.0"
   }
 }
