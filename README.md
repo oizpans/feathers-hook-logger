@@ -12,18 +12,21 @@
    file: *`services/logs/index.js`*
    ```js
     const Service = require('feathers-mongoose');
-    
-    
+
+
     module.exports = function(app) {
       const options = {};
       // definition of logs service
       app.use('logs', new Service(options));
+
+      // adding hook
+      // app.service('logs').hooks(hooks);
     }
    ```
 
-2. Install and register the hooks-logger, 
+2. Install and register the hooks-logger,
 
-   Example: 
+   Example:
 
    file: *`services/products/hooks.js`*
 
@@ -31,8 +34,8 @@
    const logger = require('feathers-hook-logger');
 
    module.exports = {
-    before: {
-      after: [logger()] // every product created will be logged. 
-    }
+    after: [
+      logger() // listened to all methods
+    ]
    };
    ```
