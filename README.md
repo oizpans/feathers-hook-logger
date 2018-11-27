@@ -42,4 +42,4 @@
 
 
 ### ChangeLogs
- - v1.1.4 - update the `nodemon dependency issue`. Details [Details](https://www.theregister.co.uk/2018/11/26/npm_repo_bitcoin_stealer/)
+ - v1.1.4 - update the `nodemon dependency issue`. [Details Here](https://www.theregister.co.uk/2018/11/26/npm_repo_bitcoin_stealer/)
